@@ -24,30 +24,4 @@
 
 #pragma once
 
-#include <zxing/LuminanceSource.h>
-#include "cinder/Surface.h"
-
-namespace zxing {
-    
-    class SurfaceBitmapSource : public LuminanceSource {
-    private:
-        ci::Surface image_;
-        int width;
-        int height;
-        const unsigned char* pixel_cache;
-        
-    public:
-        SurfaceBitmapSource(ci::Surface& image);
-        SurfaceBitmapSource(const unsigned char **pixels, int _width, int _height);
-        
-        SurfaceBitmapSource();
-        
-        int getWidth() const;
-        int getHeight() const;
-        unsigned char* getRow(int y, unsigned char* row);
-        unsigned char* getMatrix();
-        bool isRotateSupported() const;
-        Ref<LuminanceSource> rotateCounterClockwise();
-    };
-    
-}
+#include <SurfaceBitmapSource.h>

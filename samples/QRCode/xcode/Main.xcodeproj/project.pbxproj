@@ -594,22 +594,22 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(CINDER_PATH)/boost",
-					"$(CINDER_PATH)/blocks/zxing/include",
+					../../include,
+					../../../include,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../blocks/zxing/lib/macosx\"",
 					"\"$(SRCROOT)/../../../lib/macosx\"",
 				);
 				OTHER_LDFLAGS = (
 					"$(CINDER_PATH)/lib/libcinder_d.a",
-					"$(CINDER_PATH)/blocks/zxing/lib/macosx/libzxing_d.a",
+					../../../lib/macosx/libzxing_d.a,
 				);
 				PRODUCT_NAME = MainApp;
 				SDKROOT = macosx10.7;
-				USER_HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include ../include $(CINDER_PATH)/blocks/zxing/include";
+				USER_HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include ../include ../../../include";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -630,23 +630,23 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(CINDER_PATH)/boost",
-					"$(CINDER_PATH)/blocks/zxing/include",
+					../../include,
+					../../../include,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../blocks/zxing/lib/macosx\"",
 					"\"$(SRCROOT)/../../../lib/macosx\"",
 				);
 				OTHER_LDFLAGS = (
 					"$(CINDER_PATH)/lib/libcinder.a",
-					"$(CINDER_PATH)/blocks/zxing/lib/macosx/libzxing.a",
+					../../../lib/macosx/libzxing.a,
 				);
 				PRODUCT_NAME = MainApp;
 				SDKROOT = macosx10.7;
 				STRIP_INSTALLED_PRODUCT = YES;
-				USER_HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include ../include $(CINDER_PATH)/blocks/zxing/include";
+				USER_HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include ../include ../../../include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
