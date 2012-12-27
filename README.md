@@ -1,7 +1,7 @@
 Cinder-ZXing
 ============
 
-Precompiled ZXing-2.1 static libraries and headers included.
+Precompiled ZXing-2.1 static libraries for Max OS X and headers included.
 
 Usage
 -----
