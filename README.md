@@ -1,7 +1,9 @@
 Cinder-ZXing
 ============
 
-Precompiled ZXing-2.1 static libraries for Mac OS X and headers included.
+Cinder Block integrating ZXing and Cinder. Precompiled ZXing-2.1 static libraries for Mac OS X and headers included.
+
+http://code.google.com/p/zxing/
 
 Usage
 -----
