@@ -6,7 +6,9 @@
 	author="Dawid Górny"
 	summary="ZXing is a multi-format 1D/2D barcode image processing library which includes support for reading QR codes."
 	url="https://github.com/dawidgorny/Cinder-ZXing"
-	libraryUrl="http://code.google.com/p/zxing/"
+	library="http://code.google.com/p/zxing/"
+	version="2.1"
+	license="Apache"
 	>
 	<supports os="macosx" />
 	<header>include/CinderZXing.h</header>
