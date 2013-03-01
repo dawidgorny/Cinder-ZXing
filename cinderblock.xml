@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="ZXing"
+	id="zxing.dawidgorny.com"
+	author="Dawid Górny"
+	summary="ZXing is a multi-format 1D/2D barcode image processing library which includes support for reading QR codes."
+	url="https://github.com/dawidgorny/Cinder-ZXing"
+	library="http://code.google.com/p/zxing/"
+	version="2.1"
+	license="Apache"
+	>
+	<supports os="macosx" />
+	<header>include/CinderZXing.h</header>
+	<header>include/SurfaceBitmapSource.h</header>
+	<source>src/SurfaceBitmapSource.cpp</source>
+	<includePath>include</includePath>
+	<includePath system="true">include</includePath>
+	<platform os="macosx">
+		<staticLibrary>lib/macosx/libzxing.a</staticLibrary>
+		<framework sdk="true">libiconv.dylib</framework>
+	</platform>
+</block>
+<template>templates/QRDecode/template.xml</template>
+</cinder>
